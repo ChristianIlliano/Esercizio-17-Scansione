@@ -1,0 +1,80 @@
+Scansionare un documento su più fogli fronte-retro
+
+Finalmente sono riuscito a ritrovare quella pratica che sembrava essere svanita nel nulla! Che poi, possibile che nel 2021 ci siano ancora così tanti fogli di carta in giro per l’ufficio?! Ora ci penso io: una bella scansione e l’archiviamo in formato digitale, così la prossima volta so già dove andare a cercarla! L’unica pecca è che lo scanner non ha il fronte-retro automatico e mi tocca farlo a mano. Va beh, poco male, almeno sono pochi fogli!
+
+Archivio digitale
+Archivio non scansionati
+Archivio scansionati
+
+0 - Start
+1 - Accendi stampante
+2 - Prendi foglio da archivio "non scansionati"
+3 - Se foglio non scansionato
+   scansiona fronte
+   and scansiona retro
+4 - Sposta foglio in archivio scansionati
+5 - Carica foglio in archivio digitale
+6 - Ripeti punto 2 fino a quando non finiscono i fogli "non scansionati"
+   Altrimenti
+   Spegni stampante
+
+
+
+0 - Start
+1 - Accendi stampante
+2 - Prendi foglio da archivio "non scansionati"
+3 - Scansiona fronte
+4 - Sposta foglio scansionato nell'archivio "scansionati"
+5 - Ripeti punto 2 fino a quando non finiscono i fogli "non scansionati"
+6 - Prendi foglio da archivio "scansionati"
+7 - Se foglio scansionato fronte
+    scansiona retro
+8 - Ripeti punto 6 fino a quando non finiscono i fogli "scansionati"
+9 - Carica fogli scansionati in archivio digitale
+10 - Spegni stampante
+
+
+
+
+-Fogli non scanzionati [1, 2, 3]
+
+-Archivio [2]
+
+
+
+0- Accendi stampante
+1- Prendi foglio casuale da "Fogli non scanzionati"
+2- Se foglio fa parte del gruppo "Archivio"
+        torna al punto 1
+    Altrimenti
+        Scanziona fronte del foglio
+3- Gira il foglio all'interno della stampante
+4- Scansiona il retro del foglio e caricalo in "archivio"
+5- Se il gruppo "Fogli non scanzionati" è uguale a "Archivio" allora 
+        chiudi la stampante
+    Altrimenti
+        torna al punto 1
+
+
+
+
+Fogli scansioni
+Fogli non scansionati
+Archivio digitale
+
+
+
+1- Start
+2 - Accendi stampante
+3 - Prendi foglio da archivio “non scansioniati”
+       Se il foglio è stato scansionato solo fronte scansione retro 
+ Se è stato scansionato solo retro scansiona fronte
+ Se non è stato scansionato 
+  scansione fronte
+  e 
+  scansione retro
+4 - Sposta foglio in archivio fogli scansionati
+5 - Carica fogli in archivio digitale
+6 - Ripeti punto 3 
+ solo se in archivio non scansionati ci sono ancora fogli
+7 - spegni stampante
